@@ -24,8 +24,32 @@ The Poisson process is one of the most widely-used counting processes. It is usu
 
 
 # Program :
+```python
+# Developed by:Kumaran.B
+# Reg no:212220230026
+import numpy as np
+import math
+mean=3
+t=2
+def poisson(n):
+    sum=1
+    for i in range(1,n+1):
+         sum=sum*i 
+    p=math.exp(-mean*t)*(mean*t)**n/sum
+    return round(p,2) 
+fq=poisson(4)
+print("The Probability of getting exactly 4 customers arrive = ",fq)
+
+sq=1-(poisson(4)+poisson(3)+poisson(2)+poisson(1)+poisson(0)) 
+print("The Probability of getting more than 4 customers arrive = ",sq)
+tq=(poisson(3)+poisson(2)+poisson(1)+poisson(0))
+print("The Probability of getting fewer than 4 customers in 2 minute arrival = ",tq)
+```
 
  
 
-# Results and Output : 
- 
+# Output : 
+![Screenshot (279)](https://user-images.githubusercontent.com/75243072/172534244-fde6f6e2-fa16-4695-8ce3-33da4a75f237.png)
+
+# Result :
+Thus,the probability of given problem using poisson process is implemented.
