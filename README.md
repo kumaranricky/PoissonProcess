@@ -1,4 +1,10 @@
-# Poisson Process
+# EXP. NO: 05
+
+# DATE: 
+
+
+# <p align = "center"> Poisson Process </p>
+
 
 # Aim : 
 To find the probability of that  (i) exactly 4 customers arrive (ii) more than 4 customers arrive (iii) fewer than 4 customers in 2 minute  arrival. Given that the customers arrive at a bank according to a Poisson process with mean rate of 3 per minute  during a time interval of 2 min. 
@@ -25,8 +31,8 @@ The Poisson process is one of the most widely-used counting processes. It is usu
 
 # Program :
 ```python
-# Developed by:Kumaran.B
-# Reg no:212220230026
+/* Developed by:Kumaran.B
+   Reg no:212220230026*/
 import numpy as np
 import math
 mean=3
